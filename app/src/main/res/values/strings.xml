@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Brain Training</string>
+    <string name="save">сохранить</string>
+    <string name="get">получить значение</string>
+    <string name="example">6 + 2 = 8</string>
+    <string name="ans_false">неверно</string>
+    <string name="ans_true">верно</string>
+</resources>
