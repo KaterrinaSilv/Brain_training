@@ -12,7 +12,14 @@
         android:theme="@style/Theme.Brain_training"
         tools:targetApi="31">
         <activity
+            android:name=".FinishActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartActivity"
+            android:noHistory="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
