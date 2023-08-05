@@ -58,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(is_true_answer) {
                     true_answer++;
-                    textView_Score.setText("Your Score: " + true_answer);
+                    textView_Score.setText("Ваш счет: " + true_answer);
                 }
                 current_time = System.currentTimeMillis();
                 time_result = (float) (current_time - start_time) / 1000;
-                String time = "Time: " + time_result;
+                String time = "Время: " + time_result;
                 actionBar.setTitle(time);
                 genNumbers();
             }
@@ -73,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(!is_true_answer) {
                     true_answer++;
-                    textView_Score.setText("Your Score: " + true_answer);
+                    textView_Score.setText("Ваш счет: " + true_answer);
                 }
                 current_time = System.currentTimeMillis();
                 time_result = (float) (current_time - start_time) / 1000;
-                String time = "Time: " + time_result;
+                String time = "Время: " + time_result;
                 actionBar.setTitle(time);
                 genNumbers();
             }

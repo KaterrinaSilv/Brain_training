@@ -1,5 +1,6 @@
 package ru.neco_tutor.brain_training;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,6 +14,7 @@ public class FinishActivity extends AppCompatActivity {
     private ActivityFinishBinding binding;
     private TextView tv_result;
     private TextView tv_best_result;
+    private ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,9 @@ public class FinishActivity extends AppCompatActivity {
     private void init(){
         tv_result =binding.tvResult;
         tv_best_result = binding.tvBestResult;
+        actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setTitle("");
         setResult();
     }
     private void setResult(){
