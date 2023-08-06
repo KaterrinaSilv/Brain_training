@@ -45,8 +45,8 @@ public class FinishActivity extends AppCompatActivity {
             tv_result.setText("0");
             tv_best_result.setText("0");
         }else {
-            tv_result.setText("Ваш результат: " + results.getFloat("res_time"));
-            tv_best_result.setText("Лучшее время: " + results.getFloat("best_time"));
+            tv_result.setText("Ваш результат: " + results.getInt("res_answer"));
+            tv_best_result.setText("Лучшее время: " + results.getInt("best_res_answer"));
         }
 
     }
