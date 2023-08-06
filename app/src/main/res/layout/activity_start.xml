@@ -4,31 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue2"
     tools:context=".StartActivity">
 
-  <Button
+
+
+
+  <ImageView
+      android:id="@+id/bcg_iv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0"
+      app:srcCompat="@drawable/start_activity" />
+
+  <ImageView
       android:id="@+id/btn_start"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Играть"
+      android:layout_width="270dp"
+      android:layout_height="90dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/textView"
-      app:layout_constraintVertical_bias="0.5" />
-
-  <TextView
-      android:id="@+id/textView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/app_name"
-      android:textAlignment="center"
-      android:textSize="40sp"
-      app:layout_constraintBottom_toTopOf="@+id/btn_start"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.5"
-      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.5" />
+      app:layout_constraintVertical_bias="0.5"
+      app:srcCompat="@drawable/play_1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

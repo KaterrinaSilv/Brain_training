@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         int seconds = (int) (time_left / 1000) % 60;
 
         String timeLeftFormatted = String.format("%02d:%02d", minuets, seconds);
-        actionBar.setTitle(timeLeftFormatted);
+        actionBar.setTitle("Оставшееся время: " + timeLeftFormatted);
 
     }
 
