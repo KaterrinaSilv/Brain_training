@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private final String TAG = getClass().getSimpleName();
     private final String KEY = "save_key";
-
     private TextView textView_Score;
     private TextView textView_task;
     private Button btn_true;
@@ -70,8 +69,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (is_true_answer) {
                     true_answer++;
-                    textView_Score.setText("Ваш счет: " + true_answer);
+                } else {
+                    if (true_answer > 0) {
+                        true_answer--;
+                    }
+
                 }
+                textView_Score.setText("Ваш счет: " + true_answer);
                 genNumbers();
             }
         });
@@ -81,8 +85,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!is_true_answer) {
                     true_answer++;
-                    textView_Score.setText("Ваш счет: " + true_answer);
+
+                } else {
+                    if (true_answer > 0) {
+                        true_answer--;
+                    }
                 }
+                textView_Score.setText("Ваш счет: " + true_answer);
                 genNumbers();
             }
         });
